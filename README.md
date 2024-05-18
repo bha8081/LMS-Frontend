@@ -26,6 +26,7 @@ npm i
 npm run dev
 ```
 
+### Setup instruction for tailwind
 5. install the Tailwind
 
 ```

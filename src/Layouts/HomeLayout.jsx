@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 
 import Footer from "../Components/Footer";
+import { logout } from "../Redux/Slices/AuthSlice";
 
 function HomeLayout({ children }) {
 
@@ -33,12 +34,12 @@ function HomeLayout({ children }) {
         drawerSide[0].style.width = '0';
     }
 
-    // handleLogout function
-    function handleLogout(e) {
+    // handle Logout function
+    async function handleLogout(e) {
         e.preventDefault();
 
-        // const res = await dispatch(logout());
-        // if(res?.payload?.success){}
+        const res = await dispatch(logout());
+        if(res?.payload?.success){}
 
         navigate("/")
     }
@@ -101,7 +102,7 @@ function HomeLayout({ children }) {
                                             </button>
 
                                             <button className="btn-secondary px-4 py-1 font-semibold rounded-md w-full">
-                                                <Link to="/singup">Singup</Link>
+                                                <Link to="/signup">Singup</Link>
                                             </button>
                                         </div>
                                     </li>

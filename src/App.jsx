@@ -42,8 +42,9 @@ function App() {
           <Route path='/user/profile' element={<Profile />} />
           <Route path='/user/editprofile' element={<EditProfile />} />
           <Route path='/checkout' element={<Checkout />} />
+          <Route path='/checkoutsuccess' element={<CheckoutSuccess />} />
         </Route>
-        <Route path='/checkoutsuccess' element={<CheckoutSuccess />} />
+        
 
         <Route path='*' element={<NotFound />}></Route>
       </Routes>

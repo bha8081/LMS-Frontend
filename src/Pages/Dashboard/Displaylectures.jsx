@@ -103,4 +103,4 @@ function Displaylectures() {
     );
 }
 
-export default Displaylectures;
+export default Displaylectures

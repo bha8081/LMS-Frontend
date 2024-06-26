@@ -50,7 +50,7 @@ function AddLecture() {
         if(response?.payload?.success) {
             navigate(-1);
             setUserInput({
-                id: courseDetails._id,
+                id: courseDetails?._id,
                 lecture: undefined,
                 title: "",
                 description: "",
